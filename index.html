@@ -5,13 +5,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-        <title>juTube - jQuery plugin for customizable YouTube controls</title>
+        <title>jqTube - jQuery plugin for customizable YouTube controls</title>
         <script type="text/javascript" src="http://www.google.com/jsapi"></script>
         <script type="text/javascript">
             google.load("jquery","1.3.2");
             google.load("jqueryui","1.7.2");
-            google.load("swfloader","2.2");
+            google.load("swfobject","2.2");
         </script>
+
         <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-darkness/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
         <style type="text/css">
             body {
@@ -46,50 +47,57 @@
     </head>
 
     <body>
-        <a href="http://github.com/campreb/juTube"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+        <a href="http://github.com/campreb/jqTube"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
         <div id="container">
 
             <div class="download">
-                <a href="http://github.com/campreb/juTube/zipball/master">
+                <a href="http://github.com/campreb/jqTube/zipball/master">
                 <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-                <a href="http://github.com/campreb/juTube/tarball/master">
+                <a href="http://github.com/campreb/jqTube/tarball/master">
                 <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
             </div>
 
-            <a href="http://github.com/campreb/juTube"><img src="juTube.png" alt="juTube" /></a>
+            <a href="http://github.com/campreb/jqTube"><img src="jqTube.png" alt="jqTube" /></a>
 
             <div class="description">
                 jQuery plugin for customizable YouTube controls.
             </div>
-
+            <div style="float:left;">
             <h2>Dependencies</h2>
             <ul>
                 <li>jQuery 1.3.2</li>
                 <li>jQuery UI 1.7.2</li>
-                <li>swfloader 2.2.2</li>
+                <li>swfobject 2.2.2</li>
             </ul>
             <h2>Contact</h2>
             <p>Cameron Prebble (cameron@projectx.co.nz)
             <br/>      </p>
-
-
+            
             <h2>Download</h2>
             <p>
                 You can download this project in either
                 <a href="http://github.com/campreb/juTube/zipball/master">zip</a> or
                 <a href="http://github.com/campreb/juTube/tarball/master">tar</a> formats.
             </p>
+            </div>
+<div id="video" style="width:400px;height:260px;float:right;"><!-- / --></div>
+            <div style="clear:both;"><!-- / --></div>
             <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
                 by running:
-                <pre>$ git clone git://github.com/campreb/juTube</pre>
+                <pre>$ git clone git://github.com/campreb/jqTube</pre>
             </p>
 
+            
             <div class="footer">
-                get the source code on GitHub : <a href="http://github.com/campreb/juTube">campreb/juTube</a>
+                get the source code on GitHub : <a href="http://github.com/campreb/jqTube">campreb/jqTube</a>
             </div>
-            <div id="video"><!-- / --></div>
+            
         </div>
+        <script type="text/javascript" src="http://github.com/campreb/jqTube/raw/master/jquery.jqtube.js"></script>
+        <script type="text/javascript">
+            $("#video").jqTube({youTubeId:"Fpd3gQlrTis"});
+        </script>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
