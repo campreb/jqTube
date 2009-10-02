@@ -167,7 +167,8 @@
                 this._elemId+"-ytdiv", (this.width).toString(), (this.height-30).toString(), "8", null, null,
                 {
                     allowScriptAccess: "always",
-                    bgcolor: "#cccccc"
+                    bgcolor: "#cccccc",
+                    wmode:"opaque"
                 }, {
                     id: this._elemId+"-ytplayer"
                 });
